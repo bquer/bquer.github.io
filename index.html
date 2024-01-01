@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <link href='theme.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <link href='theme.css' rel='stylesheet'>
+  <style>
+    .overlay__btns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
   <!-- Canvas -->
   <canvas class="orb-canvas"></canvas>
@@ -14,28 +23,43 @@
     <div class="overlay__inner">
       <!-- Title -->
       <h1 class="overlay__title">
-    Hi , I'm <span class="text-gradient">BQuer</span> I am web and desktop developer.
+        Hi, I'm <span class="text-gradient">BQuer</span> I am a web and desktop developer.
       </h1>
       <!-- Description -->
       <p class="overlay__description">
-  I know / using ; python , javascript , nodejs , html , css , vuejs , bootstrap , linux , nginx , sql , mongo , blender
+        I know/using; python, javascript, nodejs, html, css, vuejs, bootstrap, linux, nginx, sql, mongo, blender
       </p>
       <!-- Buttons -->
       <div class="overlay__btns">
-
         <button class="overlay__btn overlay__btn--transparent">
           <a href="https://github.com/bquer" target="_blank">
             GitHub
           </a>
         </button>
-
         <button class="overlay__btn overlay__btn--colors">
-          <span>Mix , Mix , Mix</span>
+          <span>Mix, Mix, Mix</span>
           <span class="overlay__btn-emoji">🔬</span>
+        </button>
+        <button class="overlay__btn overlay__btn--transparent" onclick="playstop()">
+          <span>
+            Play/Stop Music
+          </span>
         </button>
       </div>
     </div>
   </div>
 </body>
-  <script type="module" src="color.js"></script>
+<script type="module" src="color.js"></script>
+<script>
+  var audio = new Audio("tanrıçam.mp3");
+
+  function playstop() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+
 </html>
