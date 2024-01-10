@@ -1,0 +1,120 @@
+/* ----------- CODED BY github.com/bquer ----------- */
+/* ----------- ALL CODES PROTECTING WITH MIT LISENCE ----------- */
+
+body {
+  background-color: #1A202C;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #262f41;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  max-height: 400px;
+  border: 2px solid #485a77; 
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.title-logo {
+  width: 30px; 
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 28px; 
+}
+
+.line {
+  border: 1px solid #fff; 
+  width: 100%; 
+  margin-left: 10px; 
+}
+/* ----------- PROFİL ----------- */
+.top-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-image {
+  border: 2px solid #ffffff; 
+  border-radius: 50%;
+  width: 200px; 
+  height: 200px; 
+}
+
+.profile-details {
+  margin-top: 10px;
+}
+/* ----------- Değişen YAZI ----------- */
+#dynamic-description {
+  font-size: 24px;
+}
+#text-span {
+  width: 200px; 
+  box-sizing: border-box;
+  display: inline-block;
+}
+/* ----------- KOD BARLARI ----------- */
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar {
+  position: relative;
+  height: 20px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  width: 0;
+  transition: width 1s ease-in-out; 
+}
+
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+}
+
+#html-bar {
+  width: 75%; 
+  background-color: #e44d26; 
+}
+#css-bar {
+  width: 60%; 
+  background-color: #264de4; 
+}
+#javascript-bar {
+  width: 70%; 
+  background-color: #f0db4f; 
+}
+#ts-bar {
+  width: 30%; 
+  background-color: #122da3; 
+}
+#python-bar {
+  width: 65%; 
+  background-color: #224bbd; 
+}
+#nodejs-bar {
+  width: 60%; 
+  background-color: #02c533; 
+}
+#ahk-bar {
+  width: 50%; 
+  background-color: #631b47; 
+}
