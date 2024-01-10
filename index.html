@@ -1,65 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href='theme.css' rel='stylesheet'>
-  <style>
-    .overlay__btns {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>BQuer Portfolio</title>
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50">
 
-<body>
-  <!-- Canvas -->
-  <canvas class="orb-canvas"></canvas>
-  <!-- Overlay -->
-  <div class="overlay">
-    <!-- Overlay inner wrapper -->
-    <div class="overlay__inner">
-      <!-- Title -->
-      <h1 class="overlay__title">
-        Hi, I'm <span class="text-gradient">BQuer</span> I am a web and desktop developer.
-      </h1>
-      <!-- Description -->
-      <p class="overlay__description">
-        I know/using; python, javascript, nodejs, html, css, vuejs, bootstrap, linux, nginx, sql, mongo, blender
-      </p>
-      <!-- Buttons -->
-      <div class="overlay__btns">
-        <button class="overlay__btn overlay__btn--transparent">
-          <a href="https://github.com/bquer" target="_blank">
-            GitHub
-          </a>
-        </button>
-        <button class="overlay__btn overlay__btn--colors">
-          <span>Mix, Mix, Mix</span>
-          <span class="overlay__btn-emoji">🔬</span>
-        </button>
-        <button class="overlay__btn overlay__btn--transparent" onclick="playstop()">
-          <span>
-            Play/Stop Music
-          </span>
-        </button>
+  <!-- BQuer NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbarNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BQuer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Hakkımda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#languages">Diller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projeler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#videos">Videolar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servers">Sunucular</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+  <!-- BQuer Profile -->
+  <br><br>
+  <div class="top-section" id="about">
+    <img src="https://yt3.googleusercontent.com/cyexQ0pLywzyL8-QVQOTYyDRufgeRd2Q3hdhKaY2keJHXKTHGEQn10ls1w7UKKISPfxNsj4P=s176-c-k-c0x00ffffff-no-rj" class="profile-image" alt="Profile Image">
+    <div class="profile-details">
+      <h1>BQuer</h1>
+      <div class="social-logos">
+        <a href="https://www.youtube.com/@bquerdev"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"></a>
+        <a href="https://discord.com/users/773418825693659188"><img src="https://img.icons8.com/color/48/000000/discord-logo.png" alt="Discord"></a>
+        <a href="https://github.com/bquer"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"></a>
+      </div>
+      <p id="dynamic-description"></p>
+    </div>
   </div>
+<!-- BQuer Diller -->
+<div class="title" id="languages">
+  <img src="https://i.ibb.co/PgbFgWP/download-removebg-preview.png" class="title-logo">
+  <h1>Diller</h1>
+  <hr class="line">
+</div>
+
+<div class="container">
+  <h1>Kullandığım Diller</h1>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="html-bar"></div>
+    <div class="progress-bar" id="javascript-bar"></div>
+    <div class="progress-bar" id="python-bar"></div>
+    <div class="progress-bar" id="nodejs-bar"></div>
+    <div class="progress-bar" id="css-bar"></div>
+    <div class="progress-bar" id="ahk-bar"></div>
+    <div class="progress-bar" id="ts-bar"></div>
+  </div>
+</div>
+
+<!-- BQuer Projeler-->
+<div class="title" id="projects">
+  <img src="https://pngimg.com/d/github_PNG32.png" class="title-logo">
+  <h1>Projelerim</h1>
+  <hr class="line">
+</div>
+
+<div class="container" id="projects">
+  <a href="https://github.com/bquer/ipv4-7-request-tool"><img src="https://gh-card.dev/repos/bquer/ipv4-7-request-tool.svg"></a>
+</div>
+
+<div class="container">
+  <a href="https://github.com/bquer/minecraft-pixel-aimbot"><img src="https://gh-card.dev/repos/bquer/minecraft-pixel-aimbot.svg"></a>
+</div>
+
+<div class="container">
+  <a href="https://github.com/bquer/WebGL-ESP-1v1lol"><img src="https://gh-card.dev/repos/bquer/WebGL-ESP-1v1lol.svg"></a>
+</div>
+
+<div class="container">
+  <a href="https://github.com/bquer/roulette-autobet"><img src="https://gh-card.dev/repos/bquer/roulette-autobet.svg"></a>
+</div>
+
+<div class="container">
+  <a href="https://github.com/bquer/minecraft-attacker"><img src="https://gh-card.dev/repos/bquer/minecraft-attacker.svg"></a>
+</div>
+
+
+
+<!-- BQuer Video's-->
+ <div class="title" id="videos">
+   <img src="https://assets.stickpng.com/images/5ecec81b73e4440004f09e78.png" class="title-logo">
+   <h1>Videolarım</h1>
+   <hr class="line">
+ </div>
+ 
+  <div class="container">
+    <h1>AutoBet Test</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9oOHiPisy0w?si=lkcsgiyc4dH5_3XH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+<!-- BQuer Server's-->
+
+<div class="title" id="servers">
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/023/741/062/small/discord-logo-icon-social-media-icon-free-png.png" class="title-logo">
+  <h1>Sunucular</h1>
+  <hr class="line">
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+  <script src="codebar.js"></script>
+  <script src="text.js"></script>
 </body>
-<script type="module" src="color.js"></script>
-<script>
-  var audio = new Audio("tanrıçam.mp3");
-
-  function playstop() {
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  }
-</script>
-
 </html>
