@@ -1,13 +1,13 @@
 var texts = [
   "BQuer",
-  "Geliştiriciyim",
-  "Tasarımcıyım",
+  "geliştiriciyim",
+  "tasarımcıyım",
   "Web & Desktop sewerim",
-  "Bug yazma uzmanıyım",
-  "Python ve node sevirem",
-  "Backendi daha çok sevirem",
-  "Az uz tersine mühendsilik bilirim",
-  "Tool yazmayı severim",
+  "bug yazma uzmanıyım",
+  "Python ve Node sevirem",
+  "backendi daha çok sevirem",
+  "az uz tersine mühendislik bilirim",
+  "tool yazmayı severim",
 ];
 
 var sayac = 0;
