@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var containers = document.querySelectorAll('.container');
 
-  function a() {
+  function checkInView() {
     containers.forEach(function(container) {
       var bounding = container.getBoundingClientRect();
       if (
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  window.addEventListener('scroll', a);
-  window.addEventListener('resize', a);
+  window.addEventListener('scroll', checkInView);
+  window.addEventListener('resize', checkInView);
 
-  a;
+  checkInView();
 });
