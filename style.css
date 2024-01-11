@@ -4,9 +4,7 @@
 body {
   background-color: #1A202C;
   color: #fff;
-}
-
-html {
+  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -19,6 +17,14 @@ html {
   max-width: 600px;
   max-height: 400px;
   border: 2px solid #485a77; 
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.container.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .title {
