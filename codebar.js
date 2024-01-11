@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     bar("javascript-bar", 70, "JavaScript");
     bar("nodejs-bar", 60, "NodeJS");
     bar("ts-bar", 30, "TypeScript");
-    bar("python-bar", 65, "Pyhton");
+    bar("python-bar", 65, "Python");
     bar("ahk-bar", 50, "AutoHotKey");
   });
   
